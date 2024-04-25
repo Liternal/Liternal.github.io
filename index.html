@@ -5,7 +5,10 @@
         <meta name="viewport"
               content="width=device-width, initial-scale=1.0">
         <title>Connor Kelly Portfolio</title>
+        <link rel="stylesheet"
+        href="pageStyles.css">
     </head>
+
     <body>
         <table id="header" border="0"
            width="100%" cellpadding="0"
@@ -16,11 +19,6 @@
                        cellspacing="0" width="90%"
                        align="center">
                     <tr>
-                        <td>
-                              
- 
-                        </td>
- 
                         <td>
                             <font size="6">
                                 <b>Connor Kelly</b>
@@ -95,7 +93,7 @@
                                     Contact
                                 </font>
                             </a>
-                        </td> -->
+                        </td> 
                     </tr>
                 </table>
             </td>
@@ -113,11 +111,9 @@
                             <h3>
                                 <font face="Times New Roman"
                                     size="6" color="#ffffff">
-                                    Game Designer
+                                    Game Designer and Developer
                                 </font>
-                            </h3>
- 
-                            
+                            </h3>                           
                         </td>
                     </tr>
                 </table>
@@ -151,20 +147,17 @@
                             width="400">
                         </td>
  
-                        <td width="60%">
+                        <td width="50%">
                             <font face="Verdana" size="4"
                                 color="white">
                                 My name is Connor Kelly.
                                 <hr color="black">
                                 
-                                I am game developer focusing on design and programming, with experience working in python,
+                                I am a game developer focusing on design and programming, with experience working in python,
                                 C++, along with development software such as Unreal Engine.
- 
-                                I have
                                 <hr color="black">
-                                Cheers,
-                                <br>
-                                <b>GeeksForGeeks.</b>
+ 
+                                I have worked on several team projects as a designer, and have worked for a client in the past.
                             </font>
                         </td>
                     </tr>
@@ -202,111 +195,11 @@
                                 size="5" color="black">
                                 <ul>
                                     <li>
-                                        BMI Calculator
-                                        <a href="#"
-                                           style="text-decoration:none">
-                                              ➲
-                                        </a>
+                                        
                                     </li>
  
                                     <li>
-                                        <hr color="#c2c0c3">
-                                        Calculator
-                                        <a href="#"
-                                           style="text-decoration:none"
-                                            color="#c2c0c3">
-                                              ➲
-                                        </a>
-                                    </li>
- 
-                                    <li>
-                                        <hr color="#c2c0c3">
-                                        Calendar
-                                        <a href="#"
-                                           style="text-decoration:none">
-                                              ➲
-                                        </a>
-                                    </li>
- 
-                                    <li>
-                                        <hr color="#c2c0c3">
-                                        ChatBot
-                                        <a href="#"
-                                           style="text-decoration:none">
-                                              ➲
-                                        </a>
-                                    </li>
- 
-                                    <li>
-                                        <hr color="#c2c0c3">
-                                        Contact Saver
-                                        <a href="#"
-                                           style="text-decoration:none">
-                                              ➲
-                                        </a>
-                                    </li>
- 
-                                    <li>
-                                        <hr color="#c2c0c3">
-                                        Daily Quiz
-                                        <a href="#"
-                                           style="text-decoration:none">
-                                              ➲
-                                        </a>
-                                    </li>
- 
-                                    <li>
-                                        <hr color="#c2c0c3">
-                                        Emplyoyee Record System
-                                        <a href="#"
-                                           style="text-decoration:none">
-                                              ➲
-                                        </a>
-                                    </li>
- 
-                                    <li>
-                                        <hr color="#c2c0c3">
-                                        Guess the Number-Game
-                                        <a href="#"
-                                           style="text-decoration:none">
-                                              ➲
-                                        </a>
-                                    </li>
- 
-                                    <li>
-                                        <hr color="#c2c0c3">
-                                        Random Password Generator
-                                        <a href="#"
-                                           style="text-decoration:none">
-                                             ➲
-                                        </a>
-                                    </li>
- 
-                                    <li>
-                                        <hr color="#c2c0c3">
-                                        Stone Paper Scissor
-                                        <a href="#"
-                                           style="text-decoration:none">
-                                             ➲
-                                        </a>
-                                    </li>
- 
-                                    <li>
-                                        <hr color="#c2c0c3">
-                                        Tic Tac Toe
-                                        <a href="#"
-                                           style="text-decoration:none">
-                                             ➲
-                                        </a>
-                                    </li>
- 
-                                    <li>
-                                        <hr color="#c2c0c3">
-                                        Tic Tac Toe(GUI)
-                                        <a href="#"
-                                           style="text-decoration:none">
-                                             ➲
-                                        </a>
+                                        
                                     </li>
  
                                     <li>
@@ -668,6 +561,25 @@
             </td>
         </tr>
     </table>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementById("header");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+    </script>
 
     </body>
 </html>
