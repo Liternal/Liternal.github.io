@@ -7,10 +7,12 @@
         <title>Connor Kelly Portfolio</title>
         <link rel="stylesheet"
         href="pageStyles.css">
+        
+        <script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
     </head>
 
     <body>
-        <table id="header" border="0"
+        <table id="myHeader" border="0"
            width="100%" cellpadding="0"
            cellspacing="0" bgcolor="#4CAF50">
         <tr>
@@ -187,6 +189,7 @@
                         </td>
                     </tr>
  
+                    <!--Teeter project-->
                     <tr>
                         <td width="50%">
                             <font face="Verdana" size="4"
@@ -195,13 +198,18 @@
                                     Teeter
                                 </font>
                                 <hr color="#c2c0c3">
-                                A horror survival game where you must survive waves of monsters by running away, and gathering resources to sate your hunger all the while.
+                                A horror survival game where you must survive waves of monsters by running away, 
+                                and gathering resources to sate your hunger or other needs all the while.
                                 <hr color="#c2c0c3">
                                 A student group project that lasted a semester that I worked on as main UI designer and programmer, as well as helping with general design. 
-                                I did all of the design and coding of the menus and UI in this game.
+                                I did all of the design and coding of the menus and UI in this game, while my team worked on modeling, enemies, and map design. 
                                 <hr color="#c2c0c3">
- 
-                                When designing the UI, I made sure to try and keep the UI subtle and out 
+                                When designing the UI, I made sure to try and keep it subtle and out of the way, so that it did not take the player out of the game.
+                                This would allow the player to keep their tension high while playing, as bars or a more intrusive system for health and hunger would be more likely 
+                                to take them out of it. I also tried to make it match the horror theme by making it visually dark and brooding.
+                                <hr color="#c2c0c3">
+                                The project was done through Github, and the team organized weekly sprints through Jira. I always made my deadlines, and would help out some weeks
+                                programming and scripting in the final rush.
                             </font>
                         </td>
                         <td width = "30%">
@@ -209,9 +217,32 @@
                                 <source src="teeter.mp4">
                                 <source src="teeter.mov">
                             </video>
-                            >
                         </td>
- 
+
+                        <tr>
+                            <td width = "30%">
+                                <img
+                                        style="width: 100%; margin: auto; display: block;"
+                                        class="vidyard-player-embed"
+                                        src="https://play.vidyard.com/dys8AQmkuaCPLg3YCz1F64.jpg"
+                                        data-uuid="dys8AQmkuaCPLg3YCz1F64"
+                                        data-v="4"
+                                        data-type="inline"/>
+                            </td>
+                            <td width="50%">
+                                <font face="Verdana" size="4"
+                                    color="black">
+                                    <font size="6">
+                                        Rhythm Game Demo
+                                    </font>
+                                    <hr color="#c2c0c3">
+                                    My first foray into game design and development, was done solo by me in a few weeks for a class project.
+                                    <hr color="#c2c0c3">
+                                    When designing the buttons, I made sure that the letter on the buttons corresponded to the keys you must press, and also 
+                                    that they matched the notes that came up, so that players could easily distinguish what to do without needing a guide.
+                                    <hr color="#c2c0c3">
+                                </font>
+                            </td>
                         
                     </tr>
                 </table>
@@ -551,7 +582,7 @@
         window.onscroll = function() {myFunction()};
 
         // Get the header
-        var header = document.getElementById("header");
+        var header = document.getElementById("myHeader");
 
         // Get the offset position of the navbar
         var sticky = header.offsetTop;
