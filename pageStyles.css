@@ -8,3 +8,136 @@
   .sticky + .content {
     padding-top: 102px;
   }
+  /* General Reset and Base Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+#myHeader {
+    background-color: #2e7d32;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#myHeader a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+#myHeader a:hover {
+    color: #c8e6c9;
+}
+
+/* Section Headings */
+h3, h2, h1 {
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+#projects, #achievements, #contact, #about {
+    padding: 60px 0;
+}
+
+#projects td, #achievements td, #contact td, #about td {
+    vertical-align: top;
+    padding: 20px;
+}
+
+/* Card Layout for Projects */
+#projects table tr {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+
+/* Typography Improvements */
+font[size="7"] {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+font[size="6"] {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+font[size="4"] {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Contact Form Styling */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="Submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="Submit"]:hover {
+    background-color: #388e3c;
+}
+
+/* Footer Styling */
+#footer {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+/* Images and Video Styling */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Tweaks */
+@media screen and (max-width: 768px) {
+    table, td {
+        display: block;
+        width: 100% !important;
+    }
+
+    #myHeader table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #myHeader td {
+        margin: 5px;
+    }
+}
