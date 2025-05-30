@@ -12,39 +12,27 @@
     </head>
 
     <body>
-        <header id="myHeader">
-    <div class="header-container">
-        <h1 class="site-title"><b>Connor Kelly</b></h1>
-        <nav class="nav-links">
+         <header id="myHeader">
+        <div class="header-container">
+                <h1 class="site-title"><b>Connor Kelly</b></h1>
+                <nav class="nav-links">
             <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
+
+            <div class="dropdown">
+                <a href="#projects">Projects</a>
+                <div class="dropdown-content">
+                    <a href="#dungeon-train">Dungeon Train</a>
+                    <a href="#teeter">Teeter</a>
+                    <a href="#the-tower">The Tower</a>
+                    <a href="#junkyard-grave">Junkyard Grave</a>
+                </div>
+            </div>
+            
             <a href="#achievements">Achievements</a>
             <a href="#about">About</a>
         </nav>
     </div>
 </header>
-
-        <!--Home(start)-->
-        <table id="home" border="1" width="100%"
-        cellpadding="20" cellspacing="0" bgcolor="black">
-        <tr>
-            <td>
-                <table border="0" cellpadding="15"
-                    cellspacing="0" width="90%" align="center">
-                    <tr>
-                        <td align="center" valign="middle">
-                            <h3>
-                                <font face="Times New Roman"
-                                    size="6" color="#ffffff">
-                                    Game Programmer and Designer
-                                </font>
-                            </h3>                           
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
     <!--Home(end)-->
 
 <!--Projects(start)-->
@@ -54,7 +42,7 @@
             <hr style="width: 80px; border: 2px solid #2e7d32; margin: 0 auto 40px auto;">
 
     <!-- Dungeon Train -->
-            <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 60px;">
+            <div id="dungeon-train" style="display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 60px;">
             <img src="dungeonTrainMenu.gif" alt="Dungeon Train Main Menu" style="flex: 1 1 20%; max-width: 500px; border-radius: 8px;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/PnZTd94pinE?si=JGaCV1ge1lF5Ww_f" 
                 style="flex: 1 1 25%; border-radius: 8px;" allowfullscreen></iframe>
@@ -73,7 +61,7 @@
 
     <!-- Teeter -->
             <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 60px;">
-            <div style="flex: 1 1 45%;">
+            <div id="teeter" style="flex: 1 1 45%;">
                 <h3 style="font-size: 1.75rem; color: #333;"><u>Teeter</u></h3>
                 <p>A survival horror game in Unreal Engine focused on escaping waves of monsters while managing hunger and health.</p>
                 <ul>
@@ -97,7 +85,7 @@
             <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 60px;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/rozpZDtSPc0?si=0lockBAay_UKNFWm" 
                 style="flex: 1 1 45%; border-radius: 8px;" allowfullscreen></iframe>
-            <div style="flex: 1 1 45%;">
+            <div id="the-tower" style="flex: 1 1 45%;">
                 <h3 style="font-size: 1.75rem; color: #333;"><u>The Tower</u></h3>
                 <p>A procedural platformer where I developed randomized obstacle systems for replayability and challenge with a team.</p>
                 <ul>
@@ -127,7 +115,7 @@
                 <li>Scripted interactive elements using blueprints and C++</li>
                 </ul>
             </div>
-            <div style="flex: 1 1 45%; display: flex; flex-wrap: wrap; gap: 10px;">
+            <div id="junkyard-grave" style="flex: 1 1 45%; display: flex; flex-wrap: wrap; gap: 10px;">
                 <img src="Capture.JPG" width="48%">
                 <img src="Capture1.JPG" width="48%">
                 <img src="Capture2.JPG" width="48%">
