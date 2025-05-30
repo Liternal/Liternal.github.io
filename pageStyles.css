@@ -36,7 +36,6 @@ body {
     font-weight: bold;
     color: white;
     margin: 0;
-    text-align: left;
 }
 
 /* Responsive Header Adjustments */
@@ -209,7 +208,6 @@ img, video, iframe {
 .dropdown {
     position: relative;
     display: inline-block;
-    overflow: hidden;
 }
 
 .dropdown-content {
