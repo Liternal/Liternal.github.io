@@ -114,16 +114,6 @@ img, video, iframe {
         display: block;
         width: 100% !important;
     }
-
-    #myHeader table {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #myHeader td {
-        margin: 5px;
-    }
 }
 /* General Layout Containers */
 .container {
